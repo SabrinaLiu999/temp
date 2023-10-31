@@ -7,7 +7,8 @@ def calculate_total_price(items):
     return total
 
 def discount(price):
-    if price > 100:
+    discontLine = 100
+    if price > discontLine:
         price = price * 0.9
         return price
     else:
