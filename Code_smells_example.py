@@ -3,7 +3,7 @@ def calculate_total_price(items):
     total = 0
     for item in items:
         if item.quantity > 0:
-            total += discount(item.price)
+            total = total + discount(item.price)
     return total
 
 def discount(price):
